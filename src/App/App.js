@@ -1,5 +1,12 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import {
+  BrowserRouter as
+    // Router,
+    Route,
+  Redirect,
+  // Switch
+} from 'react-router-dom';
 
 const PublicRoute = ({ component: Component, authed, ...rest }) => {
   const routeChecker = props => (authed === false
@@ -8,11 +15,14 @@ const PublicRoute = ({ component: Component, authed, ...rest }) => {
   return <Route {...rest} render={props => routeChecker(props)} />;
 };
 
-function App() {
-  return (
-    <div className="App">
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+
+      </div>
+    )
+  }
 }
 
 export default App;
