@@ -8,6 +8,8 @@ import {
   // Switch
 } from 'react-router-dom';
 
+import Registration from '../Components/Registration/Registration'
+
 const PublicRoute = ({ component: Component, authed, ...rest }) => {
   const routeChecker = props => (authed === false
     ? (<Component authed={authed} {...props} {...rest} />)
@@ -19,7 +21,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-
+        <Registration />
       </div>
     )
   }
