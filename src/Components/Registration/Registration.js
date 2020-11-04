@@ -20,33 +20,35 @@ class Registration extends React.Component {
     }
 
     usernameChange = e => this.stateString('username', e)
-    usernameChange = e => this.stateString('email', e)
-    usernameChange = e => this.stateString('password', e)
-    usernameChange = e => this.stateString('verifyPassword', e)
+    emailChange = e => this.stateString('email', e)
+    passwordChange = e => this.stateString('password', e)
+    verifyChange = e => this.stateString('verifyPassword', e)
 
     registerUser = (e) => {
         e.preventDefault();
-        console.log('User registered')
+
     }
 
     render() {
         return (
             <div className="Registration">
-                <h3 className="app-title">Registration</h3>
+                <h3 className="reg-title">Registration</h3>
+                <hr />
+                <h3 className="app-title">Take Space</h3>
                 <form className="reg-form" onSubmit={this.registerUser}>
                     <label htmlFor="username">Choose a username: </label>
-                    <input type="text" className="userName" id="nickname" placeholder=" ex: seanshank" />
+                    <input type="text" className="userName" id="nickname" placeholder=" ex: seanshank" value={this.state.newUser.username} onChange={this.usernameChange} />
                     <br />
                     <label htmlFor="email">Enter your email: </label>
-                    <input type="email" className="emailAddress" id="emailAddy" placeholder=" ex: youremail@email.com" />
+                    <input type="email" className="emailAddress" id="emailAddy" placeholder=" ex: youremail@email.com" value={this.state.newUser.email} onChange={this.emailChange} />
                     <br />
                     <label htmlFor="password">Create a password: </label>
-                    <input type="password" className="userPassword" id="userPass" placeholder=" ex: pa$$word" />
+                    <input type="password" className="userPassword" id="userPass" placeholder=" ex: pa$$word" value={this.state.newUser.password} onChange={this.passwordChange} />
                     <br />
                     <label htmlFor="password">Verify password: </label>
-                    <input type="password" className="verifyUserPassword" id="verifyUserPass" placeholder=" ex: pa$$word copy" />
+                    <input type="password" className="verifyUserPassword" id="verifyUserPass" placeholder=" ex: pa$$word copy" value={this.state.newUser.verifyPassword} onChange={this.verifyChange} />
                     <br />
-                    <button type="submit" className="btn btn-primary">Register</button>
+                    <button type="submit" className="btn btn-primary subButton">Register</button>
                 </form>
             </div>
         )
