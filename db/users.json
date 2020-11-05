@@ -1,0 +1,14 @@
+{
+  "users": {
+    "uid": "123wxyz",
+    "username": "User01",
+    "email": "user01@gmail.com",
+    "password": "pa$$word"
+  },
+  "user02": {
+    "uid": "789abcd",
+    "username": "user02",
+    "email": "user02@gmail.com",
+    "password": "pa$$port"
+  }
+}

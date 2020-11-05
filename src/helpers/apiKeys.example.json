@@ -1,0 +1,12 @@
+{
+  "firebaseKeys": {
+    "apiKey": "AIzaSyDTVmwHzWMbUwt6G6OG7KKXhbB2dNo_6Gc",
+    "authDomain": "takespace-51efd.firebaseapp.com",
+    "databaseURL": "https://takespace-51efd.firebaseio.com",
+    "projectId": "takespace-51efd",
+    "storageBucket": "takespace-51efd.appspot.com",
+    "messagingSenderId": "707609993541",
+    "appId": "1:707609993541:web:6640b421f6ed75c9e15e2c",
+    "measurementId": "G-X0JLJDRCV8"
+  }
+}
